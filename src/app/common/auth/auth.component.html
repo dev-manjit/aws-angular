@@ -1,0 +1,18 @@
+<!-- User Account -->
+<button matIconButton [matMenuTriggerFor]="menu" aria-label="Account">
+    <mat-icon>{{ isAuthenticated ? 'how_to_reg' : 'person_cancel' }}</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item *ngIf="!isAuthenticated">
+    <mat-icon>app_registration</mat-icon>
+    <span>Registration</span>
+  </button>
+  <button mat-menu-item (click)="openUserDialog()" *ngIf="!isAuthenticated">
+    <mat-icon>how_to_reg</mat-icon>
+    <span>Sign In</span>
+  </button>
+  <button mat-menu-item *ngIf="isAuthenticated">
+    <mat-icon>logout</mat-icon>
+    <span>Logout</span>
+  </button>
+</mat-menu>

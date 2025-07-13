@@ -1,0 +1,16 @@
+<mat-toolbar color="primary">
+  <span class="logo">My App</span>
+  <span class="spacer"></span>
+  <!-- Desktop Links -->
+  <div class="desktop-links">
+    <button mat-button routerLink="/">Home</button>
+    <button mat-button routerLink="/about">About</button>
+    <!-- User Account -->
+    <app-auth></app-auth>
+  </div>
+  <!-- Menu -->
+  <button matMiniFab class="menu-button" aria-label="Menu">
+        <mat-icon>menu</mat-icon>
+  </button>
+</mat-toolbar>
+<div class="vertical-line"></div>

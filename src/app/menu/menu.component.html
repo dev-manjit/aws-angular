@@ -1,0 +1,32 @@
+<mat-toolbar class="mat-elevation-z4 header-toolbar">
+  <span class="logo">Wobble</span>
+
+  <!-- Desktop Links -->
+  <span class="spacer"></span>
+  <div class="nav-links">
+    <a mat-button>Work</a>
+    <a mat-button>Studio</a>
+    <a mat-button>Careers</a>
+    <button mat-flat-button  class="cta-btn">Get in Touch</button>
+  </div>
+  <!-- User Account -->
+  <button mat-icon-button class="cta-btn" (click)="openUserDialog()" aria-label="User">
+    <mat-icon>account_box</mat-icon>
+  </button>
+  <!-- Mobile Menu Toggle -->
+  <button mat-icon-button (click)="toggleMenu()" aria-label="Menu">
+    <mat-icon>{{ menuOpen ? 'close' : 'menu' }}</mat-icon>
+  </button>
+
+</mat-toolbar>
+
+<!-- Mobile Links -->
+<div *ngIf="menuOpen" class="nav-links mat-elevation-z4">
+  <a mat-button>Work</a>
+  <a mat-button>Studio</a>
+  <a mat-button>Careers</a>
+  <button mat-flat-button class="mobile-btn">Get in Touch</button>
+  <button mat-icon-button class="cta-btn" (click)="openUserDialog()" aria-label="User">
+    <mat-icon>account_circle</mat-icon>
+  </button>
+</div>

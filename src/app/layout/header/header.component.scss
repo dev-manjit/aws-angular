@@ -1,0 +1,31 @@
+mat-toolbar {
+  padding: 0 1.5rem; 
+}
+
+.logo {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  padding-right: 1rem;
+}
+.spacer {
+  flex: 1 1 auto;
+}
+.vertical-line {
+      border-bottom: 1px solid var(--color-primary);
+      width: auto;
+    }
+
+.menu-button {
+  display: none;
+}
+@media (max-width: 768px) {
+  .menu-button {
+    display:inline-flex
+  }
+   .desktop-links {
+    display:none
+  }
+  }
+
+  

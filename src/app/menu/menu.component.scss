@@ -1,0 +1,88 @@
+.logo {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  padding-right: 1rem;
+}
+
+.navbar {
+  height: var(--navbar-height);
+  display: flex;
+  align-items: center;
+  background: var(--color-background);
+  border-bottom: 2px solid var(--highlight-bg);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+
+.header-toolbar {
+  background: var(--color-background);
+  border-bottom: 2px solid var(--highlight-bg);
+  height: var(--navbar-height);
+  display: flex;
+  align-items: center;
+  padding: 0 var(--navbar-padding);
+  color: var(--color-text);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+.nav-links {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  a {
+    font-weight: bold;
+    color: var(--color-text);
+  }
+}
+
+.cta-btn {
+  margin-left: 1rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: transform var(--transition-speed) var(--transition-bounce);
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.menu-btn {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  background: var(--color-background);
+  padding: 1rem;
+  border-top: 2px solid var(--highlight-bg);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  a,
+  button {
+    margin-bottom: 0.75rem;
+    font-weight: bold;
+  }
+}

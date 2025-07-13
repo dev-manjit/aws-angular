@@ -1,0 +1,5 @@
+<menuheader/>
+<!--User-->
+<a href="#" (click)="openRegistration(); $event.preventDefault()">Register</a>
+<user-reg *ngIf="showUserReg" (closed)="closeRegistration()"></user-reg>
+

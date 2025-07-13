@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 90%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; 
+ background: var(--pattern-bg);}
+
+:root {
+  --pattern-bg: url('./assets/images/pattern.png');
+  --color-background: #ffffff;
+  --color-text: #2c3e50;
+  --color-primary: #e74c3c;
+  --color-secondary: #1385ab;
+  --color-background-dialog:#00000080;
+  --color-button-dialog:#00000080;
+  --highlight-secondary: #509bb4;
+  --highlight-bg: #f2f5f7;
+  --navbar-height: 80px;
+  --navbar-padding: 1.5rem;
+  --transition-speed: 0.3s;
+  --transition-bounce: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+//Form styles
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}

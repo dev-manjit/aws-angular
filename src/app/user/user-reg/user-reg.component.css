@@ -1,0 +1,36 @@
+
+.header {
+  text-align: center;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.error,input.ng-invalid.ng-touched + div {
+  color: red;
+  font-size: 0.9em;
+}
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px; 
+  margin-top: 10px;
+}
